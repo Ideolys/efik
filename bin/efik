@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const fs   = require('fs');
+const test = require('../lib/test-cli');
+
+let action = process.argv[2];
+
+switch (action) {
+  case 'test':
+    test(process.argv.slice(3));
+    break;
+  default:
+    usage(); // command(process.argv.slice(2));
+}
+
+function usage () {
+  console.log('*************************************');
+  console.log('efik [...]');
+  console.log('  test');
+  process.exit();
+}
