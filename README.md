@@ -227,8 +227,7 @@ module.exports = {
 - [ ] CRUD automatique, avec création des tests
 - [ ] Avoir un sytème générique qui synchronise une liste d'objet versionné (Git) dans une table de la BDD. En fait, on l'a redévélelopper plein de fois pour les report, cube, action, pages, ... Je me demande si on ne devrait pas fournir un outil standard mais c'est pas urgent
 - [ ] Garder l'outil datasetManager et gérer les inclusion de template.
-
-
+- [ ] toujours fonctionner en mode cluster pour simplifier le code et éviter les IF cluster 0, etc...
 
 
 
